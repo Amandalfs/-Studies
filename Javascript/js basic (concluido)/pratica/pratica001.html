@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <style>
+        body{
+            background: rgba(46, 39, 39, 0.986);
+            color: white;
+        }
+        input {
+            background: rgb(135, 255, 245);
+            font: normal arial 18px;
+            border-radius: 8px;
+            display: flex;
+            text-align: center;
+        }
+
+        input.caixa {
+            text-align: center;
+            display: flex;
+            width: 50px;
+        }
+        input.botao {
+            width: 60px;
+            text-align: center;
+        }
+        div#res {
+            margin-top: 10px;
+
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div>
+        <input type="number" name="txtn1" id="txtn1" class="caixa">  
+        <input type="number" name="txtn2" id="txtn2" class="caixa">
+    </div> 
+    <div>
+        <input type="button" value="multi" onclick="multi()" class="botao">
+        <input type="button" value="dividir" onclick="dividir()" class="botao">
+        <input type="button" value="somar" onclick="somar()" class="botao">
+        <input type="button" value="subtrair" onClick="subtrair()" class="botao">
+    </div>
+     <div id="res">Resultado</div>
+    <script>
+
+
+        function multi() {
+            var tn1 = document.getElementById('txtn1');
+            var tn2 = document.getElementById('txtn2');
+            var res = document.getElementById('res');
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+            var s = n1 * n2;
+            res.innerHTML = (`Resultado: ${n1} vezes ${n2} é ${s.toFixed(2)}`);
+        }
+
+        function dividir() {
+            var tn1 = document.getElementById('txtn1');
+            var tn2 = document.getElementById('txtn2');
+            var res = document.getElementById('res');
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+            var s = n1 / n2;
+            res.innerHTML = `Resultado: ${n1} divido ${n2} é ${s.toFixed(2)}`
+        }
+
+        function somar() {
+            var tn1 = document.getElementById('txtn1');
+            var tn2 = document.getElementById('txtn2');
+            var res = document.getElementById('res');
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+            var s = n1 + n2;
+            res.innerHTML = `Resultado: ${n1} mais ${n2} é ${s}`
+        }
+
+        function subtrair() {
+            var tn1 = document.getElementById('txtn1');
+            var tn2 = document.getElementById('txtn2');
+            var res = document.getElementById('res');
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+            var s = n1 - n2;
+            res.innerHTML = `Resultado: ${n1} menos ${n2} é ${s}`
+        }
+    </script>
+</body>
+</html>

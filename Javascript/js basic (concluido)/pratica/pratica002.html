@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        body {
+            background: blueviolet;
+        }
+        div {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <p>Limite De Velocidade Nas Ruas: 40Km/h</p>
+    <p>Limite De Velocidade Nas Rodovias: 80Km/h</p>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h <br>
+    Localide: <input type="text" name="txtlocal" id="txtlocal"> Rua Ou Rodovia?
+    <input type="button" value="Verificar" onclick="calcular()"></br>
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector('input#txtvel');
+            var res = window.document.getElementsByTagName('div')[0]
+            var txtlocal = window.document.querySelector('input#txtlocal');
+            var local = String(txtlocal.value);
+            var vel = Number(txtv.value);
+            console.log(local)
+            var limite = 0;
+            var multa = 150;
+            res.innerHTML += `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong><p>`;
+            if (local==="Rua") limite = 40;
+            else limite = 80;
+            if (vel> limite) {
+                res.innerHTML += `<p>Você está <strong>multado(a)<strong> por excesso de velocidade`;
+                multa += (vel - limite)*5;
+                res.innerHTML += `<p>Você recebeu uma multa de ${multa}R$`;
+            }
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança</p>`;
+            
+        }
+    </script>
+</body>
+</html>
