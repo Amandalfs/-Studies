@@ -1,0 +1,17 @@
+body {
+    font-size: 15px;
+    padding: 5px;
+    font-family: arial;
+}
+
+button {
+    padding: 30px;
+}
+
+section {
+    padding: 15px;
+    font-size: 12pt;
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+}
