@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+h1, h2, h3 {
+    font-family: Pacifico, cursive;
+    font-weight: normal;
+}
+
+body {
+    font: arial, 14pt;
+}
+
+p {
+    font-size: 15pt;
+}
+
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12pt;
+    background-color: green;
+    color: white;
+}
+
+section p {
+    font-size: 14pt;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
+section  {
+    padding-left: 5px;
+}
