@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario/aumento de funcionarios</title>
+    <link rel="stylesheet" href="/df001/style.css">
+    <style>
+        footer {
+            text-align: left;
+            font-size: 12pt;
+            padding: 4px;
+        }
+        input, button {
+            padding: 4px;
+        }
+
+        header {
+            padding: 6px;
+        }
+        footer {
+            padding: 3px;
+        }
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.582);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+            <h1>Reajuste Salarial</h1>
+            <p>Nome Funcionario(a): <input type="text" name="txtNome" id="txtNome"></p>
+            <p>Salario Atual: <input type="number" name="txtSalAtual" id="txtSalAtual"></p>
+            <p>Meta: <input type="number" name="txtMeta" id="txtMeta"></p>
+            <button onclick="iniciar()">Verificar e Fazer Reajuste</button>
+    </header>
+
+    <section id="panel">
+        <p>Preencha Os Dados a Cima</p>
+    </section>
+
+    <footer> 
+        <p>Meta: 30hr semanal</p>
+        <ul>
+            <li> meta 30hr a mais - 3%
+            <li> meta 40hr a mais - 6%
+            <li> meta 50hr a mais - 12%
+            <li> meta 60hr a mais - 20%
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
