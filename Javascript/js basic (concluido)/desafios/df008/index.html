@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo De Desconto</title>
+    <link rel="stylesheet" href="/df001/style.css">
+    <style>
+        footer {
+            text-align: left;
+            font-size: 12pt;
+            padding: 4px;
+        }
+        input, button {
+            padding: 4px;
+        }
+
+        header {
+            padding: 6px;
+        }
+        footer {
+            padding: 3px;
+        }
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.582);
+        }
+    </style>
+</head>
+<body>
+    
+
+    <header>   
+        <h1>Calcular Desconto</h1>   
+        <p>Nome Do Produto: <input type="text" name="lblNome" id="lblNome" maxlength="25"> </p>
+        <p>Preco Do Produto: <input type="number" name="lblValor" id="lblValor"></p>
+        <p>Cupom: <input type="text" name="lblCupom" id="lblCupom" maxlength="5"></p>
+        <button onclick="iniciar()">Calcular Desconto</button>
+    </header>
+
+    <section id="panel">
+        <p>Preencha os dados a cima.</p>
+    </section>
+    
+    <footer>
+        <h1>Lista de cupons.</h1>
+        <ul type="square">
+            <li>Cupom: 'EX57C' (25%)</li>
+            <li>Cupom: 'IX14X' (10%)</li>
+            <li>Cupom: 'FWF17' (8%)</li>
+            <li>Cupom: '14FVW' (7%)</li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
