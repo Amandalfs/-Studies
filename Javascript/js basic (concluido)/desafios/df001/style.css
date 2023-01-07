@@ -6,8 +6,12 @@ body  {
 }
 
 button {
-    padding: 30px;
+    padding: 25px;
     border-radius: 10px;
     font-size: 13pt;
 }
 
+input {
+    padding: 25px;
+    border-radius: 10px;
+}
