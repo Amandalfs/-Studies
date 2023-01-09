@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula de Bhaskara</title>
+    <link rel="stylesheet" href="/df001/style.css">
+    <style>
+        footer {
+            text-align: left;
+            font-size: 12pt;
+            padding: 4px;
+        }
+        input, button {
+            padding: 4px;
+        }
+
+        header {
+            padding: 6px;
+        }
+        footer {
+            padding: px;
+        }
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.582);
+        }
+
+        div {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resolvendo Bhaskara</h1>
+    <p>Considerando uma equacao no formato <strong>ax<sup>2</sup> + bx + c = 0,</strong>
+    aperte o botao a baixo para calcular o valor de &Delta; 
+    </p>
+    <div>
+        A: <input type="number" name="numA" id="numA">
+        B: <input type="number" name="numB" id="numB">
+        C: <input type="number" name="numC" id="numC">
+    </div>
+    <button onclick="iniciar()">Calcular</button>
+    <section id="panel"> 
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
