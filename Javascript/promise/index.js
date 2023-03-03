@@ -13,10 +13,6 @@ const promesa = new Promise((resolve, reject)=>{
 
 console.log('aguardando');
 
-promesa.then(result =>{
-    console.log(result)
-})
-.catch(result =>{
-    console.log(result)
-})
+promesa.then(result =>{console.log(result)})
+.catch(result =>{console.log(result)})
 .finally(()=>{console.log('Finalizada')}); 
