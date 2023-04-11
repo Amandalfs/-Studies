@@ -1,6 +1,6 @@
 ![](https://i.imgur.com/xG74tOh.png)
 
-# Back-end | Variáveis
+# Back-end | Variáveis Typescript
 
 ## Exercícios
 
