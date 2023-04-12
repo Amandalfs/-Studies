@@ -28,7 +28,7 @@ Sendo:
 \
 Considerando a figura abaixo:
 
-![](https://static.escolakids.uol.com.br/conteudo_legenda/460f67f820a78f732d55395e1932a031.jpg)
+![x](https://static.escolakids.uol.com.br/conteudo_legenda/460f67f820a78f732d55395e1932a031.jpg)
 
 $$ S = 180 \* (6 - 2) $$
 
@@ -44,9 +44,9 @@ Imprima na tela o valor da soma dos ângulos internos $S$ e o valor de cada âng
 
 Preencha a checklist para finalizar o exercício:
 
-- [ ] Resolver o exercício revendo a aula se necessário
-- [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [x] Resolver o exercício revendo a aula se necessário
+- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `lógica` `módulo 1` `exercício de casa` `matemática` `nodeJS`

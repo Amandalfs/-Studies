@@ -4,7 +4,7 @@
   "description": "![](https://i.imgur.com/xG74tOh.png)",
   "main": "./01/index.ts",
   "scripts": {
-    "dev": "tsx watch 08/index.ts",
+    "dev": "tsx watch 09/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
