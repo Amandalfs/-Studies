@@ -1,0 +1,16 @@
+{
+  "name": "exercicios-variaveis-typescript",
+  "version": "1.0.0",
+  "description": "![](https://i.imgur.com/xG74tOh.png)",
+  "main": "./01/index.ts",
+  "scripts": {
+    "dev": "tsx watch 02/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.4"
+  }
+}
