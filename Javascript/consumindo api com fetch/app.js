@@ -1,5 +1,6 @@
 const url="https://api-newlabs.cyclic.app/dados";
 
+
 /* const btn = document.querySelector('.btn')
 btn.addEventListener('click', ()=>{
     getProducts();
