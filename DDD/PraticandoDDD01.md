@@ -26,8 +26,21 @@ Essa é apenas uma visão geral da minha rotina diária como dono de uma loja de
 - Encomendas personalizadas
 - Estoque
 - Pedidos especiais
+- Pedidos
 - Registro
 - anotações
 - vendas
 - caixa
+- faturas
+- pagamentos
 - tendências
+
+# Caso de Uso
+
+- verificar a qualidade dos produtos
+- gerenciar as encomendas
+- verificar a data de vencimento dos produtos
+- fazer os registros de transacoes
+- gerenciar o caixa 
+- monitorar estoque
+- verificar equipamentos
