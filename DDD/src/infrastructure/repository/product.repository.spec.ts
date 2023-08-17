@@ -70,9 +70,9 @@ describe("Product repository unit tests", ()=>{
 
         const products = await productRepository.findAll();
         expect(products.length).toBe(3);
-        expect(products).toContain(product);
-        expect(products).toContain(product2);
-        expect(products).toContain(product3);
+        expect(products).toContainEqual(product);
+        expect(products).toContainEqual(product2);
+        expect(products).toContainEqual(product3);
 
     })
 

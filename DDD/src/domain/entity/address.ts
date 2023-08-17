@@ -38,4 +38,24 @@ export class Address {
 
         return true;
     }
+
+    get street(): string {
+        return this._street;
+    }
+
+    get city(): string {
+        return this._city;
+    }
+
+    get state(): string {
+        return this._state;
+    }
+
+    get cep(): string {
+        return this._cep;
+    }
+
+    get country(): string {
+        return this._country;
+    }
 }
