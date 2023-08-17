@@ -14,6 +14,10 @@ export class Order {
         this.validate();
     }
 
+    get customer_id(): string {
+        return this._customer_id;
+    }
+
     validate(): boolean{
         if(this._id.length === 0){
             throw new Error("Id is required");

@@ -35,4 +35,18 @@ describe("Order unit tests", ()=>{
         const order = new Order("123", "customer_id", "name", [item1, item2]);
         expect(order.validate()).toBe(true);
     })
+
+    it("Should throw an error when sending invalid points.", ()=>{
+        expect(()=>{
+            const customer = new Customer("123", "Name Customer");
+            customer.addRewardsPoints(NaN);
+        }).toThrowError("Invalid points, it needs to be a number.");
+    })
+
+    it("Should throw an error if points are less than or equal to zero.", ()=>{
+        expect(()=>{
+            const customer = new Customer("123", "Name Customer");
+            customer.addRewardsPoints(-1);
+        }).toThrowError("Points must be greater than zero.");
+    })
 })
