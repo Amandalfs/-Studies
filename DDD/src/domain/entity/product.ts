@@ -33,8 +33,12 @@ export class Product {
     get price(): number {
         return this._price;
     }
+    
+    get id(): string {
+        return this._id;
+    }
 
-    onChange(name: string): void{
+    nameChange(name: string): void{
         this._name = name;
         this.validate();
     }

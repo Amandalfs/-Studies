@@ -22,7 +22,7 @@ describe("Product unit tests", ()=>{
 
     it("Should change name", ()=>{
         const product = new Product("id123", "Product 1", 200);
-        product.onChange("Product 2");
+        product.nameChange("Product 2");
         expect(product.name).toBe("Product 2");
     })
 })
