@@ -11,9 +11,10 @@ datasource db {
 }
 
 model Product {
-  id    String @id
-  name  String
-  price Float
+  id         String       @id
+  name       String
+  price      Float
+  Order_Item Order_Item[]
 
   @@map("products")
 }
@@ -28,6 +29,33 @@ model Customer {
   state        String
   cep          String
   country      String
+  Order        Order[]
 
   @@map("customers")
+}
+
+model Order {
+  id    String @id
+  name  String
+  total Float
+
+  customer   Customer     @relation(fields: [customerId], references: [id])
+  customerId String
+  items      Order_Item[]
+
+  @@map("orders")
+}
+
+model Order_Item {
+  id       String @id
+  name     String
+  price    Float
+  quantity Int
+
+  Order     Order   @relation(fields: [orderId], references: [id])
+  orderId   String
+  product   Product @relation(fields: [productId], references: [id])
+  productId String
+
+  @@map("orders_items")
 }
