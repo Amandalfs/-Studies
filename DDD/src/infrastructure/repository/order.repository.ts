@@ -1,6 +1,6 @@
 import { ItemOrder } from "../../domain/entity/item_order";
 import { Order } from "../../domain/entity/order";
-import { OrderRepositoryInterface } from "../../domain/repositories/order.repository.interface";
+import { OrderRepositoryInterface } from "../../domain/checkout/repositories/order.repository.interface";
 import { prisma } from "../db/prisma";
 
 export class OrderRepository implements OrderRepositoryInterface {

@@ -1,6 +1,6 @@
 import { EventDispatcher } from "./eventDispatcher";
-import { ProductCreatedEvent } from "./product/productCreatedEvent";
-import { SendEmailWhenProductIsCreatedHanlder } from "./product/sendEmailWhenProductIsCreatedHanlder";
+import { ProductCreatedEvent } from "../../product/event/productCreatedEvent";
+import { SendEmailWhenProductIsCreatedHanlder } from "../../product/event/sendEmailWhenProductIsCreatedHanlder";
 
 describe("domain events tests", ()=>{
 

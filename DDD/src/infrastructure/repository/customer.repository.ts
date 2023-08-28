@@ -1,6 +1,6 @@
 import { Address } from "../../domain/entity/address";
 import { Customer } from "../../domain/entity/customer";
-import { CustomerRepositoryInterface } from "../../domain/repositories/customers.repository.interface";
+import { CustomerRepositoryInterface } from "../../domain/customer/repositories/customers.repository.interface";
 import { prisma } from "../db/prisma";
 
 export class CustomerRepository implements CustomerRepositoryInterface {
