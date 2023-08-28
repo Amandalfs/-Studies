@@ -1,7 +1,7 @@
 import { execSync } from "child_process";
-import { Product } from "../../domain/entity/product";
+import { Product } from "../../../domain/product/entity/product";
 import { v4 as uuid } from "uuid";
-import { prisma } from "../db/prisma";
+import { prisma } from "../../db/prisma";
 import { ProductRepository } from "./product.repository";
 
 describe("Product repository unit tests", ()=>{

@@ -1,7 +1,7 @@
-import { Address } from "../../domain/entity/address";
-import { Customer } from "../../domain/entity/customer";
-import { CustomerRepositoryInterface } from "../../domain/customer/repositories/customers.repository.interface";
-import { prisma } from "../db/prisma";
+import { Address } from "../../../domain/customer/entity/address";
+import { Customer } from "../../../domain/customer/entity/customer";
+import { CustomerRepositoryInterface } from "../../../domain/customer/repositories/customers.repository.interface";
+import { prisma } from "../../db/prisma";
 
 export class CustomerRepository implements CustomerRepositoryInterface {
     async create(entity: Customer): Promise<void> {

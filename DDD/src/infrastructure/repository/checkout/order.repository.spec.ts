@@ -1,13 +1,13 @@
-import { Customer } from "../../domain/entity/customer";
-import { ItemOrder } from "../../domain/entity/item_order";
-import { Order } from "../../domain/entity/order";
-import { Product } from "../../domain/entity/product";
+import { Customer } from "../../../domain/customer/entity/customer";
+import { Address } from "../../../domain/customer/entity/address";
+import { ItemOrder } from "../../../domain/checkout/entity/item_order";
+import { Order } from "../../../domain/checkout/entity/order";
+import { Product } from "../../../domain/product/entity/product";
 import { v4 as uuid } from "uuid";
-import { prisma } from "../db/prisma";
+import { prisma } from "../../db/prisma";
 import { OrderRepository } from "./order.repository";
-import { CustomerRepository } from "./customer.repository";
-import { ProductRepository } from "./product.repository";
-import { Address } from "../../domain/entity/address";
+import { CustomerRepository } from "../customer/customer.repository";
+import { ProductRepository } from "../product/product.repository";
 import { execSync } from 'child_process';
 
 describe("Order repository unit tests", ()=>{

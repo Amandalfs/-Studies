@@ -1,9 +1,9 @@
 import { execSync } from "child_process";
 import { v4 as uuid } from "uuid";
-import { prisma } from "../db/prisma";
+import { prisma } from "../../db/prisma";
 import { CustomerRepository } from "./customer.repository";
-import { Customer } from "../../domain/entity/customer";
-import { Address } from "../../domain/entity/address";
+import { Customer } from "../../../domain/customer/entity/customer";
+import { Address } from "../../../domain/customer/entity/address";
 
 describe("Customer repository unit tests", ()=>{
     beforeEach(async ()=>{

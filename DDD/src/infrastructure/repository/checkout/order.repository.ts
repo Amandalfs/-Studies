@@ -1,7 +1,7 @@
-import { ItemOrder } from "../../domain/entity/item_order";
-import { Order } from "../../domain/entity/order";
-import { OrderRepositoryInterface } from "../../domain/checkout/repositories/order.repository.interface";
-import { prisma } from "../db/prisma";
+import { ItemOrder } from "../../../domain/checkout/entity/item_order";
+import { Order } from "../../../domain/checkout/entity/order";
+import { OrderRepositoryInterface } from "../../../domain/checkout/repositories/order.repository.interface";
+import { prisma } from "../../db/prisma";
 
 export class OrderRepository implements OrderRepositoryInterface {
     async create(entity: Order): Promise<void> {
